@@ -1,0 +1,8 @@
+const nameInputEl = document.querySelector('#name-input')
+const nameOutputEl = document.querySelector("#name-output");
+
+nameInputEl.addEventListener('input', currentOutputNameEl);
+
+function currentOutputNameEl() {
+    nameOutputEl.textContent = event.currentTarget.value || "Anonymous";
+}
